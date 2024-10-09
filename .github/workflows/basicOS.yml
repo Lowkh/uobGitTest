@@ -13,6 +13,12 @@ jobs:
     - name: greeting steps
       run: |
         echo "Hello there"
+
+    - name: Checkout my codes
+      uses: actions/checkout@v4
+    - name: print content of repo
+      run: |
+        ls
         
     
     
