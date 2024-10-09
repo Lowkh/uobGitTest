@@ -4,7 +4,15 @@ on:
     branches: [main]
 
 jobs:
-  bbuilds:
+  builds:
+    # create VM with ubuntu OS
     runs-on: ubuntu-16.04
+
+    steps:
+    # first step to say hello
+    - name: greeting steps
+      run: |
+        echo "Hello there"
+        
     
     
