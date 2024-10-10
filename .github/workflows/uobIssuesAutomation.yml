@@ -1,7 +1,7 @@
 
 name: My Second workflow
 on:
-  push:
+  pull_request:
     branches: [main]
 
 jobs:
