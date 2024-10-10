@@ -42,12 +42,7 @@ jobs:
       run: |
         pytest -v -cov --junitxml=report.xml
 
-    - name: Publish Test Results
-      uses: EnricoMi/publish-unit-test-result-action@v2
-      if: always()
-      with:
-        junit_files: "report.xml"
-        
+    
     # this is where we access the hidden repo
     - name: Checkout Hidden Repo
       uses: actions/checkout@v4
